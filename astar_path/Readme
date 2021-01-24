@@ -1,0 +1,59 @@
+
+==============================================================================
+PATH PLANNING USING A-STAR 
+==============================================================================
+
+STEPS TO SETUP THE CATKIN WORKSPACE
+
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+catkin_make
+source devel/setup.bash
+
+COPY THE astar_path folder into catkin_ws/src folder
+
+cd ~/catkin_ws
+
+To launch the files:
+
+roslaunch astar_path astar.launch
+
+rosrun rqt_graph rqt_graph  # to get the rqt graph
+
+==============================================================================
+
+The Path followed for the given Goal Coordinate is (4.5, 9.0)
+
+[[ 0  0  0  0  0  0  0  0  0  0  0  0  1  0  1  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  1 55  1  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  0  0 55  0  0  0  0]
+ [ 1  0  0  0  0  0  0  0  0  0  0  0  0 55  0  0  0  0]
+ [ 0  1  0  0  0  0  0  0  0  0  0  0  0 55  0  0  0  0]
+ [ 0  0  1  0  0  0  1  1  1  1  1  1  0 55  0  0  0  0]
+ [ 0  0  1  0  0  0  1  1  1  1  1  1  0 55  0  0  0  0]
+ [ 0  0  0  1  0  0  0  0  0  0  0  0  0 55  0  1  1  0]
+ [ 0  0  0  0  1  0  0  0  0  0  0  0  0 55  0  1  1  1]
+ [ 0  0  0  0  1  1  0  0  0  0  0  0  0 55  0  1  1  1]
+ [ 0  0  0  0  0  1  0  0  0  0  0  0 55  0  0  1  1  1]
+ [ 0  0  0  0  0  1  1  0  0  0  0 55  0  0  0  0  1  0]
+ [ 0 55 55 55 55  0  1  1  1  0 55  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0 55  0  1  0 55  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0 55 55 55  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  1  1  0  0  0  1  1  1  1  0]
+ [ 0  0  0  0  0  0  0  0  1  1  1  0  0  1  1  1  1  0]
+ [ 0  0  0  0  0  0  0  1  1  1  0  0  0  1  1  1  1  0]
+ [ 0  0  0  0  0  0  0  0  1  1  0  0  0  1  1  1  1  1]]
+
+
+==============================================================================
+# Reference
+
+# https://towardsdatascience.com/data-structure-heap-23d4c78a6962
+# https://www.redblobgames.com/pathfinding/a-star/implementation.html
+
+
+
+
+
+********************__THANK YOU__*************************
