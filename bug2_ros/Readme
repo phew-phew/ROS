@@ -1,0 +1,25 @@
+==============================================================================
+BUG2 Algorithm Implementation
+==============================================================================
+
+BUG2 is a local path palnning algoritm with a global goal.
+
+BUG2 Algorithm:
+
+* Head towards goal on the m-line.
+* if any obstacle is found, follow it untill you raech m-line again (closer to goal).
+*continue on the m-line. 
+
+The Visualization can be seen using rviz
+
+launch:
+
+roslaunch bug2_ros bug2.launch
+
+==============================================================================
+ 
+BUG Algorithms in detail:
+
+https://www.cs.cmu.edu/~motionplanning/lecture/Chap2-Bug-Alg_howie.pdf
+
+==============================================================================
