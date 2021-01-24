@@ -1,0 +1,19 @@
+==============================================================================
+A simple RANSAC Algorithm Implementation
+==============================================================================
+
+The laser range finder data is taken as input and outputs a set of lines which the obstacle(if any) in front of the robot.
+
+The Visualization can be seen using rviz
+
+launch:
+
+roslaunch ransac_multi ransac.launch
+
+==============================================================================
+ 
+Ransac in detail:
+
+https://en.wikipedia.org/wiki/Random_sample_consensus
+
+==============================================================================

@@ -1,0 +1,8 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find ransac_multi)/world/playground.world" />
+	<node name="perception" pkg="ransac_multi" type="ransac.py" output="screen" />
+
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find ransac_multi)/rviz/default.rviz" />
+
+</launch>
