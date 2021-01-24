@@ -2,7 +2,7 @@
 A simple RANSAC Algorithm Implementation
 ==============================================================================
 
-The laser range finder data is taken as input and outputs a set of lines which the obstacle(if any) in front of the robot.
+The laser range finder data is taken as input and outputs a set of lines which is the obstacle(if any) in front of the robot.
 
 The Visualization can be seen using rviz
 
